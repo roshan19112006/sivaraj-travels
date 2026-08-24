@@ -37,12 +37,11 @@ export default function Navbar() {
             }}
             className="flex items-center gap-2"
           >
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gold text-sm font-bold text-white md:h-10 md:w-10">
-              ST
-            </div>
-            <span className="font-heading text-lg font-bold text-white md:text-xl">
-              SIVARAJ <span className="text-gold">TRAVELS</span>
-            </span>
+            <img
+              src="/sivaraj-logo.png"
+              alt="Sivaraj Travels"
+              className="h-9 w-auto md:h-10"
+            />
           </a>
 
           {/* Desktop nav */}

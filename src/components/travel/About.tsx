@@ -31,9 +31,18 @@ export default function About() {
   return (
     <section id="about" className="py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Logo */}
+        <div ref={heading.ref} {...heading.motion} className="mb-12 text-center">
+          <img
+            src="/sivaraj-logo.png"
+            alt="Sivaraj Travels Logo"
+            className="mx-auto h-56 w-auto sm:h-64 md:h-72"
+          />
+        </div>
+
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Image side */}
-          <div ref={heading.ref} {...heading.motion} className="relative">
+          <div className="relative">
             <div className="relative overflow-hidden rounded-2xl">
               <img
                 src="https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=800&h=600&fit=crop"

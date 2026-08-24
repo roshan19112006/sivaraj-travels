@@ -24,9 +24,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <h3 className="font-heading text-xl font-bold text-white">
-              SIVARAJ <span className="text-gold">TRAVELS</span>
-            </h3>
+            <img
+              src="/sivaraj-logo.png"
+              alt="Sivaraj Travels"
+              className="h-20 w-auto"
+            />
             <p className="mt-3 text-sm text-white/50">
               Safe • Comfortable • Reliable
             </p>
