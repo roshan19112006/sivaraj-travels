@@ -1,11 +1,16 @@
 import { useState } from "react";
-import { X } from "lucide-react";
+import { X, ImageOff } from "lucide-react";
 import { GALLERY_IMAGES } from "@/config/business";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 export default function Gallery() {
   const heading = useScrollReveal({ delay: 0 });
   const [lightbox, setLightbox] = useState<number | null>(null);
+  const [failed, setFailed] = useState<Set<number>>(new Set());
+
+  const handleError = (index: number) => {
+    setFailed((prev) => new Set(prev).add(index));
+  };
 
   return (
     <section id="gallery" className="py-20 sm:py-28">
@@ -23,6 +28,7 @@ export default function Gallery() {
           {GALLERY_IMAGES.map((img, i) => {
             const Card = () => {
               const r = useScrollReveal({ delay: i * 0.05 });
+              const isFailed = failed.has(i);
               return (
                 <div
                   ref={r.ref}
@@ -30,12 +36,20 @@ export default function Gallery() {
                   className="gallery-item group relative cursor-pointer overflow-hidden rounded-xl"
                   onClick={() => setLightbox(i)}
                 >
-                  <img
-                    src={img.src}
-                    alt={img.alt}
-                    className="h-40 w-full object-cover sm:h-48"
-                    loading="lazy"
-                  />
+                  {isFailed ? (
+                    <div className="flex h-40 flex-col items-center justify-center gap-2 bg-navy/5 sm:h-48">
+                      <ImageOff className="h-8 w-8 text-muted-foreground/40" />
+                      <span className="text-xs text-muted-foreground/50">Photo coming soon</span>
+                    </div>
+                  ) : (
+                    <img
+                      src={img.src}
+                      alt={img.alt}
+                      className="h-40 w-full object-cover sm:h-48"
+                      loading="lazy"
+                      onError={() => handleError(i)}
+                    />
+                  )}
                   <div className="absolute inset-0 flex items-center justify-center bg-navy/0 transition-colors group-hover:bg-navy/40">
                     <span className="rounded-lg bg-white/90 px-3 py-1.5 text-xs font-bold text-navy opacity-0 transition-opacity group-hover:opacity-100">
                       {img.category}

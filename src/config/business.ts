@@ -184,18 +184,18 @@ export const TESTIMONIALS = [
   },
 ] as const;
 
-// Gallery images — replace these URLs with actual business photos later
+// Gallery images — actual fleet and travel photos
+// To replace: swap the .jpg files in public/gallery/ with your real photos
 export const GALLERY_IMAGES = [
-  { src: "https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=600&h=400&fit=crop", alt: "Premium car travel", category: "Vehicles" },
-  { src: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&h=400&fit=crop", alt: "Scenic road journey", category: "Journeys" },
-  { src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop", alt: "Beautiful destination", category: "Destinations" },
-  { src: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&h=400&fit=crop", alt: "Travel experience", category: "Travel" },
-  { src: "https://images.unsplash.com/photo-1449965408869-ebd63fc7d0e3?w=600&h=400&fit=crop", alt: "Comfortable vehicle interior", category: "Vehicles" },
-  { src: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&h=400&fit=crop", alt: "Mountain road trip", category: "Journeys" },
-  { src: "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=600&h=400&fit=crop", alt: "Tropical destination", category: "Destinations" },
-  { src: "https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=600&h=400&fit=crop", alt: "Travel group", category: "Travel" },
-  { src: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=600&h=400&fit=crop", alt: "Hill station journey", category: "Journeys" },
-  { src: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&h=400&fit=crop", alt: "Nature travel", category: "Destinations" },
-  { src: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600&h=400&fit=crop", alt: "Road adventure", category: "Travel" },
-  { src: "https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=600&h=400&fit=crop", alt: "Family vacation", category: "Travel" },
+  { src: "/gallery/vehicle-01.jpg", alt: "Hyundai i20 fleet car", category: "Vehicles" },
+  { src: "/gallery/vehicle-02.jpg", alt: "Hyundai i20 side profile", category: "Vehicles" },
+  { src: "/gallery/vehicle-03.jpg", alt: "Decorated bus interior with colourful seating", category: "Vehicles" },
+  { src: "/gallery/vehicle-04.jpg", alt: "Custom-painted travel bus exterior", category: "Vehicles" },
+  { src: "/gallery/vehicle-05.jpg", alt: "Travel bus on a scenic hillside road", category: "Journeys" },
+  { src: "/gallery/vehicle-06.jpg", alt: "Honda City ready for a night trip", category: "Vehicles" },
+  { src: "/gallery/vehicle-07.jpg", alt: "Chevrolet Tavera van for group travel", category: "Vehicles" },
+  { src: "/gallery/vehicle-08.jpg", alt: "Toyota Etios on a forest route", category: "Journeys" },
+  { src: "/gallery/vehicle-09.jpg", alt: "Decorated maxicab front view", category: "Vehicles" },
+  { src: "/gallery/vehicle-10.jpg", alt: "Fleet cars parked together", category: "Vehicles" },
+  { src: "/gallery/vehicle-11.jpg", alt: "Maruti Ertiga prepared for a trip", category: "Vehicles" },
 ] as const;
