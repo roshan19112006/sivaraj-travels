@@ -32,13 +32,20 @@ export default function Vehicles() {
                   className="group flex flex-col rounded-2xl border border-border/50 bg-white shadow-sm transition-all hover:border-gold/20 hover:shadow-lg hover:shadow-gold/5"
                 >
                   {/* Card header */}
-                  <div className="flex items-center gap-3 border-b border-border/50 p-6">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy/5 text-navy transition-all group-hover:bg-gold group-hover:text-white">
-                      <Car className="h-6 w-6" />
+                  <div className="flex items-center justify-between gap-3 border-b border-border/50 p-6">
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy/5 text-navy transition-all group-hover:bg-gold group-hover:text-white">
+                        <Car className="h-6 w-6" />
+                      </div>
+                      <h3 className="font-heading text-xl font-bold text-navy">
+                        {v.name}
+                      </h3>
                     </div>
-                    <h3 className="font-heading text-xl font-bold text-navy">
-                      {v.name}
-                    </h3>
+                    {v.price && (
+                      <span className="whitespace-nowrap rounded-lg bg-gold/10 px-3 py-1.5 text-sm font-bold text-gold">
+                        {v.price}
+                      </span>
+                    )}
                   </div>
 
                   {/* Body */}

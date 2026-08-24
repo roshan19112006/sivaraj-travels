@@ -37,6 +37,7 @@ export const VEHICLES = [
     name: "5-Seater Car",
     description:
       "Perfect for small families, couples and comfortable personal travel.",
+    price: "₹14 / km",
     features: [
       "5 Seats",
       "Comfortable Interior",
@@ -51,6 +52,7 @@ export const VEHICLES = [
     name: "7-Seater Car",
     description:
       "Spacious and comfortable for families and small groups.",
+    price: "₹17 / km",
     features: [
       "7 Seats",
       "Spacious Interior",
@@ -62,17 +64,19 @@ export const VEHICLES = [
   },
   {
     id: "van",
-    name: "Van",
+    name: "21-Seater Coach Van",
     description:
       "A practical option for group travel, functions and longer journeys.",
+    price: "₹3,300 / 250 km",
     features: [
+      "21 Seats",
       "Group Seating",
       "Comfortable Travel",
       "Suitable for Events",
       "Outstation Friendly",
     ],
     enquiryMessage:
-      "Hello Sivaraj Travels, I am interested in booking the Van. Please provide the details.",
+      "Hello Sivaraj Travels, I am interested in booking the 21-Seater Coach Van. Please provide the details.",
   },
 ] as const;
 
