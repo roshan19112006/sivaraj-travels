@@ -45,8 +45,8 @@ export default function About() {
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl">
               <img
-                src="https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=800&h=600&fit=crop"
-                alt="Premium travel vehicle"
+                src="/about.jpg"
+                alt="Sivaraj Travels vehicle"
                 className="h-full w-full object-cover"
                 loading="lazy"
               />
