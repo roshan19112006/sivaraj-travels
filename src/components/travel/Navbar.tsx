@@ -41,6 +41,7 @@ export default function Navbar() {
               src="/sivaraj-logo.png"
               alt="Sivaraj Travels"
               className="h-9 w-auto md:h-10"
+              decoding="async"
             />
           </a>
 

@@ -47,6 +47,7 @@ export default function Gallery() {
                       alt={img.alt}
                       className="h-40 w-full object-cover sm:h-48"
                       loading="lazy"
+                      decoding="async"
                       onError={() => handleError(i)}
                     />
                   )}

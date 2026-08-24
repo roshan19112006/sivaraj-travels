@@ -8,12 +8,12 @@ export default function Hero() {
       id="home"
       className="relative flex min-h-screen items-center overflow-hidden"
     >
-      {/* Background image */}
+      {/* Background image — preload above-the-fold, then lazy-decode */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1449965408869-ebd63fc7d0e3?w=1920&h=1080&fit=crop')",
+            "url('https://images.unsplash.com/photo-1449965408869-ebd63fc7d0e3?w=1920&h=1080&fit=crop&q=75')",
         }}
       />
 

@@ -37,6 +37,7 @@ export default function About() {
             src="/sivaraj-logo.png"
             alt="Sivaraj Travels Logo"
             className="mx-auto h-56 w-auto sm:h-64 md:h-72"
+            decoding="async"
           />
         </div>
 
@@ -49,6 +50,7 @@ export default function About() {
                 alt="Sivaraj Travels vehicle"
                 className="h-full w-full object-cover"
                 loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent" />
             </div>

@@ -28,6 +28,7 @@ export default function Footer() {
               src="/sivaraj-logo.png"
               alt="Sivaraj Travels"
               className="h-20 w-auto"
+              decoding="async"
             />
             <p className="mt-3 text-sm text-white/50">
               Safe • Comfortable • Reliable
