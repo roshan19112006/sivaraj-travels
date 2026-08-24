@@ -52,7 +52,7 @@ export default function About() {
                 loading="lazy"
                 decoding="async"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/10 to-transparent" />
             </div>
             {/* Floating badge */}
             <div className="absolute -bottom-5 -right-3 rounded-2xl bg-gold px-6 py-4 text-center shadow-xl shadow-gold/20 sm:-right-5">
