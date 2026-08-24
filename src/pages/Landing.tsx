@@ -10,8 +10,6 @@ import Owner from "@/components/travel/Owner";
 import Testimonials from "@/components/travel/Testimonials";
 import BookingCTA from "@/components/travel/BookingCTA";
 import Contact from "@/components/travel/Contact";
-import Location from "@/components/travel/Location";
-import EnquiryForm from "@/components/travel/EnquiryForm";
 import WhatsAppButton from "@/components/travel/WhatsAppButton";
 import Footer from "@/components/travel/Footer";
 
@@ -30,8 +28,6 @@ export default function Landing() {
       <Testimonials />
       <BookingCTA />
       <Contact />
-      <Location />
-      <EnquiryForm />
       <Footer />
       <WhatsAppButton />
     </div>
