@@ -5,7 +5,6 @@ import About from "@/components/travel/About";
 import Services from "@/components/travel/Services";
 import Vehicles from "@/components/travel/Vehicles";
 import WhyChooseUs from "@/components/travel/WhyChooseUs";
-import Destinations from "@/components/travel/Destinations";
 import Gallery from "@/components/travel/Gallery";
 import Owner from "@/components/travel/Owner";
 import Testimonials from "@/components/travel/Testimonials";
@@ -26,7 +25,6 @@ export default function Landing() {
       <Services />
       <Vehicles />
       <WhyChooseUs />
-      <Destinations />
       <Gallery />
       <Owner />
       <Testimonials />
